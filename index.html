@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Gallery</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+    <header class="gallery-header">
+        <h1 class="gallery-title">GALLERY<span>HUB</span></h1>
+        <div class="gallery-controls">
+            <input type="search" id="imageSearch" placeholder="Search images..." aria-label="Search images">
+            <select id="categoryFilter" aria-label="Filter by category">
+                <option value="all">All categories</option>
+                <option value="nature">Nature</option>
+                <option value="cars">Cars</option>
+                <option value="bikes">Bikes</option>
+                <option value="anime">Anime</option>
+                <option value="superheroes">Superheroes</option>
+                <option value="got">GOT</option>
+                <option value="transformers">Transformers</option>
+                <option value="games">Games</option>
+                <option value="wallpaper">Wallpaper</option>
+            </select>
+        </div>
+    </header>
+    <div class="full-img" id="fullImgBox">
+        <div class="viewer-stage">
+            <button type="button" class="nav-btn prev-btn" aria-label="Previous image" title="Previous" onclick="showPrev()">&#10094;</button>
+            <img src="images/image1.jpg" id="fullImg">
+            <button type="button" class="nav-btn next-btn" aria-label="Next image" title="Next" onclick="showNext()">&#10095;</button>
+        </div>
+        <span onclick="closefullImg()">x</span>
+    </div>
+
+    <div class="img-gallery">
+
+        <div class="gallery-item" data-categories="anime">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+
+        <div class="gallery-item" data-categories="superheroes">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+
+        <div class="gallery-item" data-categories="anime">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+
+        <div class="gallery-item" data-categories="bikes">
+            <img src="images/image5.jpg" alt="Image 5">
+        </div>
+
+        <div class="gallery-item" data-categories="cars">
+            <img src="images/image6.jpg" alt="Image 6">
+        </div>
+
+        <div class="gallery-item" data-categories="nature,wallpaper">
+            <img src="images/image7.jpg" alt="Image 7">
+        </div>
+
+        <div class="gallery-item" data-categories="nature,wallpaper">
+            <img src="images/image8.jpg" alt="Image 8">
+        </div>
+
+        <div class="gallery-item" data-categories="anime">
+            <img src="images/image9.jpg" alt="Image 9">
+        </div>
+
+        <div class="gallery-item" data-categories="games">
+            <img src="images/image10.jpg" alt="Image 10">
+        </div>
+
+        <div class="gallery-item" data-categories="got">
+            <img src="images/image11.jpg" alt="Image 11">
+        </div>
+
+        <div class="gallery-item" data-categories="anime">
+            <img src="images/image12.jpg" alt="Image 12">
+        </div>
+
+        <div class="gallery-item" data-categories="transformers">
+            <img src="images/image13.jpg" alt="Image 13">
+        </div>
+
+        <div class="gallery-item" data-categories="superheroes">
+            <img src="images/image14.jpg" alt="Image 14">
+        </div>
+
+        <div class="gallery-item" data-categories="transformers">
+            <img src="images/image15.jpg" alt="Image 15">
+        </div>
+
+        <div class="gallery-item" data-categories="anime">
+            <img src="images/image16.jpg" alt="Image 16">
+        </div>
+
+        <div class="gallery-item" data-categories="wallpaper,nature">
+            <img src="images/image17.jpg" alt="Image 17">
+        </div>
+
+        <div class="gallery-item" data-categories="games">
+            <img src="images/image18.jpg" alt="Image 18">
+        </div>
+
+        <div class="gallery-item" data-categories="wallpaper,nature">
+            <img src="images/image19.jpg" alt="Image 19">
+        </div>
+
+        <div class="gallery-item" data-categories="wallpaper">
+            <img src="images/image20.jpg" alt="Image 20">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+</html>
